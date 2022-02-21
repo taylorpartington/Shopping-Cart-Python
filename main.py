@@ -18,8 +18,9 @@ def applyAction(choice, data,filename):
 
 def appendCSV(data,filename):
     item = getUserString("What Item are you Adding?: ")
-    price = getUserString("how much is it?(ex 1.99): ")
-    data.append([item,price])
+    quantity = getUserString("How many of that item?: ")
+    price = getUserString("How much is it?(ex 1.99): ")
+    data.append([item,quantity,price])
     with open(filename,'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerows(data)

@@ -1,5 +1,5 @@
-Item,Price
-sugar,5.99
-yogurt,5.99
-milk,4.99
-soup,0.99
+Item,Quantity,Price
+sugar,1,5.99
+yogurt,2,5.99
+milk,2,4.99
+soup,5,0.99

@@ -16,7 +16,7 @@ class CSVConverter:
         return self.data
 
     def CreateData(self):
-        fields = ["Item","Price"]
+        fields = ["Item","Quantity","Price"]
         self.filename
         with open(self.filename, 'w') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames = fields)
