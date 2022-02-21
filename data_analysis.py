@@ -18,7 +18,7 @@ class DataAnalysis:
         f = open("analysis.txt", 'w')
         f.write("Total Items: " + str(len(self.data)) + "\n")
         f.write("Sub-total: $" + str(round(sum(self.price),2)) + "\n")
-        f.write(self.price.describe())
+        f.write(str(self.price.describe()))
         f.close()
 
 
